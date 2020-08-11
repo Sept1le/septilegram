@@ -1,4 +1,19 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
 .header-image {
+    border: solid 1px #dbdbdb;
     display: flex;
     justify-content: center;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    background-color: #fafafa;
+}
+.gallery img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
 }
