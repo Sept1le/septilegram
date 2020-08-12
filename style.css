@@ -8,12 +8,20 @@ body {
     justify-content: center;
 }
 .gallery {
-    display: flex;
     justify-content: center;
     background-color: #fafafa;
 }
-.gallery img {
-    width: 400px;
-    height: 400px;
+.line {
+    display: flex;
+}
+.photo {
+
+}
+.photo img{
+    width: 293px;
+    height: 293px;
     object-fit: cover;
+}
+.photo:hover {
+    filter: brightness(0.6)
 }
