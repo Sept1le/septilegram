@@ -1,0 +1,126 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.header-image {
+    border: solid 1px #dbdbdb;
+    display: flex;
+    justify-content: center;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+.line {
+    display: flex;
+}
+.photo {
+
+}
+.photo a img{
+    width: 293px;
+    height: 293px;
+    object-fit: cover;
+}
+.photo:hover {
+    filter: brightness(0.6);
+    cursor: pointer;
+    /*
+    transform: scale(1.05)
+    */
+}
+.lightbox {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+}
+.lightbox.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.lightbox-panel{
+    position: absolute;
+    top: 60px;
+    /*margin-top: 60px;*/
+    width: 500px;
+    height: 500px;
+}
+.lightbox-panel img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.lightbox-content {
+    display: none;
+}
+.lightbox-content.active {
+    position: absolute;
+    top: 560px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    padding-top: 0px;
+    background-color: white;
+}
+.lightbox-content.active header {
+    width: 500px;
+    height: 65px;
+    display: flex;
+    border-bottom: solid 1px #dbdbdb;
+}
+.user {
+    height: 32px;
+    width: 32px;
+    margin: 15px;
+}
+.user img{
+    border-radius: 50px;
+    height: 32px;
+    width: 32px;
+}
+.user-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.user-nick {
+    font-size: 14px;
+    font-weight: 600;
+}
+.user-geo {
+    font-size: 11px;
+}
+.checkmark, .checkmark img {
+    width: 12px;
+    height: 12px;
+}
+.user-comment {
+    margin-right: 18px;
+}
+.user-comment-text {
+    font-size: 14px;
+}
+.lightbox-content.active main {
+    width: 500px;
+    display: flex;
+    border-bottom: solid 1px #dbdbdb;
+    padding-bottom: 18px;
+}
+.post-buttons img{
+    width: 25px;
+    height: 25px;
+}
+.septilegram.hidden{
+    overflow: hidden;
+}
