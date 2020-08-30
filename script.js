@@ -12,6 +12,8 @@ images.forEach(image => {
         const block = document.createElement('div');
         block.classList.add('lightbox-panel');
         const img = document.createElement('img'); 
+        const quit_button = document.createElement('button');
+        quit_button.type = 'reset';
         img.src = image.querySelector('img').src;
         if (lightbox.firstChild) {
             lightbox.removeChild(lightbox.firstChild);
@@ -22,6 +24,7 @@ images.forEach(image => {
         gallery.classList.add('hidden');
         lightbox.appendChild(block);
         lightbox.appendChild(content);
+        lightbox.appendChild(quit_button);
     });
     
 });

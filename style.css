@@ -2,6 +2,10 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background-color: #fafafa;
+}
+header{
+    background-color:#FFFFFF;
 }
 .header-image {
     border: solid 1px #dbdbdb;
@@ -9,6 +13,7 @@ body {
     justify-content: center;
 }
 .gallery {
+    margin-top: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,9 +22,6 @@ body {
 }
 .line {
     display: flex;
-}
-.photo {
-
 }
 .photo a img{
     width: 293px;
@@ -123,4 +125,39 @@ body {
 }
 .septilegram.hidden{
     overflow: hidden;
+}
+.page-footer {
+    border: solid 1px #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me {
+    margin-bottom: 0;
+    padding-bottom: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+.contacts {
+    display: flex;
+    width: 340px;
+}
+.contact-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+.contact-text {
+    font-size: 14px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.contacts ul{
+    list-style-type: none;
+}
+.copyright {
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(var(--f52,142,142,142),1);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
